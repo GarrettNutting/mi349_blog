@@ -3,88 +3,102 @@ body, h1, h2, h3, p {
     padding: 0;
   }
   
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #ecf0f1;
-  }
   
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 7px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-  
-  header h1 {
-    font-size: 36px;
-  }
-  
-  header ul {
-    list-style: none;
-    margin-top: 20px;
-    padding: 0;
-  }
-  
-  header ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  header a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  img, h4 {
-    padding: 10px;
-    margin: 10px;
-  }
-  
-  section#blog {
-    margin: 0 20px;
-  }
-  
-  form label {
-    display: block;
-    margin: 20px;
-  }
-  
-  input[type="text"] {
-    width: 25%;
-    padding: 10px;
-    margin: 5px 0;
-  }
-  
-  button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  table {
-    margin: 20px;
-  }
-  
-  figure figcaption {
-    font-size: 14px;
-    max-width: 100%;
-    padding: 15px;
-    margin: 0 10px;
-  }
-  
-  p {
-    line-height: 1.4em;
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ecf0f1;
+}
 
-  table {
-    border-collapse: separate; 
-    border-spacing: 20px; 
-  }
-  
-th.centered
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 3px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 
+header h1 {
+  font-size: 24px;
+}
+
+header ul {
+  list-style: none;
+  margin-top: 7px;
+  padding: 0;
+}
+
+header ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section#main {
+  margin: 0 20px 20px;
+}
+
+
+input[type="text"] {
+  width: 25%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+table {
+  margin: 20px;
+}
+
+p {
+  line-height: 1.4em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+table {
+  border-collapse: separate; 
+  border-spacing: 20px; 
+}
+  
+th.centered-header {
+  text-align: center
+}
+
+figure {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+figcaption {
+  font-size: 14px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: -10px;
+  padding: 10px;
+}
+
+figure.image-caption {
+  float: left;
+  margin: 15px 20px 350px 15px;
+}
+
+figure.image-caption figcaption p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
