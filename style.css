@@ -103,6 +103,7 @@ figcaption {
   text-align: center;
   width: 200px;
   margin: 0px 50px;
+  text-align: left;
 }
 
 .image_caption img{
