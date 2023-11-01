@@ -92,13 +92,33 @@ figcaption {
   padding: 10px;
 }
 
-figure.image-caption {
+.image_caption {
   float: left;
-  margin: 15px 20px 350px 15px;
+  margin: 1px 1px 1px 1px;
 }
 
-figure.image-caption figcaption p {
+.image_caption figcaption p {
   font-size: 16px;
   line-height: 1.5;
-  text-align: left;
+  text-align: center;
+  width: 200px;
+  margin: 0px 50px;
+}
+
+.image_caption img{
+  float: left;
+  width: 200px;
+  height: auto;
+  margin: 50px 50px 5px;
+}
+
+.picture_captions img {
+  width: 500px;
+  height: auto;
+}
+
+.contact {
+  margin-top: 30px;
+  padding: 0px;
+  height: 500px;
 }
