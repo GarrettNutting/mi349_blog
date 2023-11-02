@@ -124,6 +124,7 @@ table {
   background-color: #333;
   color: #fff;
   padding: 5px;
+  border-radius: 5px;
 }
 
 td {
@@ -131,6 +132,40 @@ td {
   padding: 10px;
   background-color: #f9f9f9;
   text-align: center;
+  border-radius: 5px;
+}
+
+#newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+#newsletter h4 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#newsletter label {
+  font-size: 18px;
+}
+
+#newsletter input[type="text"] {
+  width: 25%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+#newsletter button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 #contact_container {
