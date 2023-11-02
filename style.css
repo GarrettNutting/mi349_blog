@@ -58,9 +58,6 @@ button {
   cursor: pointer;
 }
 
-table {
-  margin: 20px;
-}
 
 p {
   line-height: 1.4em;
@@ -119,7 +116,7 @@ table {
   width: 100%;
   border-collapse: separate; 
   border-spacing: 20px; 
-  
+  margin: 20px;
 }
   
 .centered_header {
@@ -144,3 +141,47 @@ td {
   margin: 0 auto;
   padding: 20px;
 }
+
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin: 5px 0;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  align-self: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
