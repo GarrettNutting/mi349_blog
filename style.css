@@ -68,15 +68,6 @@ p {
   margin-top: 10px;
 }
 
-table {
-  border-collapse: separate; 
-  border-spacing: 20px; 
-}
-  
-th.centered-header {
-  text-align: center
-}
-
 figure {
   text-align: center;
   margin-top: 50px;
@@ -110,7 +101,7 @@ figcaption {
   float: left;
   width: 200px;
   height: auto;
-  margin: 50px 50px 5px;
+  margin: 10px 50px 5px;
 }
 
 .picture_captions img {
@@ -122,4 +113,34 @@ figcaption {
   margin-top: 30px;
   padding: 0px;
   height: 500px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate; 
+  border-spacing: 20px; 
+  
+}
+  
+.centered_header {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.form_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  max-width: 800px; 
+  margin: 0 auto;
+  padding: 20px;
 }

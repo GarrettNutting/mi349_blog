@@ -37,11 +37,12 @@
       <p>The process of creating my own homelab within my dorm room has not been an easy task. Michigan State University utilizes Dynamic Host Configuration Protocol (DHCP) on their network. MSU requires that each students register their device on the DHCP Device Registration in order to connect to the network and gain access to the internet. DHCP automatically provides an IP host with its IP address and other related configuration information such as the subnet mask and default gateway. The DHCP server maintains a pool of IP addresses that it will hand out to devices as they start up on the network. Your device is essentially “leasing” this IP address and will release it back into the pool of IP addresses if renewal occurs and the device that was leasing that IP is not on.<a href="https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-top">You can learn more about it here.</a> </p>
       <p>Now that we have a basic understanding of DHCP and what it does and how it works, how does that affect my homelab? One of my goals when creating my homelab was to create my own Active Directory domain where I can organize all users on my network, and experiment with things like groups to further my knowledge of Active Directory. In order to do so, I needed my server to have a static IP address. To comply with MSU DHCP, but reaching my goals on my personal network, I bought a router that allows Network Address Translation (NAT). NAT is a way to map multiple private addresses inside a local network to a public IP address before transferring the information onto the internet. This means that MSU&apos;s network receives the traffic from all my devices under one IP address (IP of my router), while any device on the back end of my router (server, PC, laptop, etc.) is under my private network where I can statically route each device. This allows me to statically route my server and allows me to set up Active Directory, Domain Name System (DNS), and more.</p>
       <p> To give you an idea of how I have my devices statically routed, view the table below:</p>
+    <div class="form_container">
       <table>
         <tr>
-          <th class= "centered-header">Device Type</th>
-          <th class= "centered-header">Hostname</th>
-          <th class= "centered-header">IPv4 Address</th>
+          <th class= "centered_header">Device Type</th>
+          <th class= "centered_header">Hostname</th>
+          <th class= "centered_header">IPv4 Address</th>
         </tr>
         <tr>
           <td>Netgear Nighthawk Router</td>
@@ -69,6 +70,7 @@
           <td>10.0.0.4</td>
         </tr>
       </table>
+    </div>
       <figure class="picture_captions">
       <img alt="Homelab Hardware" src="images/HomelabHardware.jpeg">
       <figcaption>Here's the hardware components that make up my homelab. I run Windows Server 2022 on a Dell Precision 3430, and the router I use is a Netgear Nighthawk Rax45.</figcaption>
